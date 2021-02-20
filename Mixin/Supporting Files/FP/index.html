@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+  <div class="output"></div>
+  <script>
+    async function genFingerprint() {
+      const fp = await FingerprintJS.load();
+      const result = await fp.get();
+      const hash = result.visitorId;
+      return hash
+    }
+  </script>
+  <script>
+    async function initFingerprintJS() {
+      window.fp_result = 'xxxxx';
+      window.fp_result = await genFingerprint();
+      console.log(window.fp_result);
+    }
+  </script>
+  <script src="./fp.min.js" onload="initFingerprintJS()"></script>
+</body>
+</html>

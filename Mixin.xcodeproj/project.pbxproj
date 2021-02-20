@@ -605,6 +605,13 @@
 		ABE865BE23F2455800C0167D /* Scope.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE865BD23F2455800C0167D /* Scope.swift */; };
 		ABE865C123F260FE00C0167D /* PermissionsActionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABE865BF23F260FE00C0167D /* PermissionsActionCell.xib */; };
 		ABE865C223F260FE00C0167D /* PermissionsActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE865C023F260FE00C0167D /* PermissionsActionCell.swift */; };
+		C4264DA925CC193B00D0D9A2 /* GroupInviteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4264DA825CC193B00D0D9A2 /* GroupInviteView.swift */; };
+		C4264DE425CC2DC000D0D9A2 /* GroupInviteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4264DE325CC2DC000D0D9A2 /* GroupInviteViewController.swift */; };
+		C4264DEA25CC37E800D0D9A2 /* GroupInviteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4264DE925CC37E800D0D9A2 /* GroupInviteItem.swift */; };
+		C426E41025BD764B001F654C /* Mixin-Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = C426E40F25BD764B001F654C /* Mixin-Keys.plist */; };
+		C426E42025BD76EE001F654C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C426E41F25BD76EE001F654C /* GoogleService-Info.plist */; };
+		C426E51325BE5C8D001F654C /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = C426E51125BE5C8C001F654C /* index.html */; };
+		C426E51425BE5C8D001F654C /* fp.min.js in Resources */ = {isa = PBXBuildFile; fileRef = C426E51225BE5C8C001F654C /* fp.min.js */; };
 		DF03C88B1FF3A58C00C1ED6B /* GroupInviteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF03C88A1FF3A58C00C1ED6B /* GroupInviteCell.swift */; };
 		DF03C88D1FF4D9A100C1ED6B /* RefreshGroupIconJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF03C88C1FF4D9A100C1ED6B /* RefreshGroupIconJob.swift */; };
 		DF048CCE223FCA02005F1EF5 /* ModernSelectedBackgroundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF048CCD223FCA02005F1EF5 /* ModernSelectedBackgroundCell.swift */; };
@@ -797,8 +804,6 @@
 		DFE864F22422A59E009B1833 /* RecipientHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE864F12422A59E009B1833 /* RecipientHeaderView.swift */; };
 		DFF1AD7C22254C6F0087173D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF1AD7B22254C6E0087173D /* R.generated.swift */; };
 		DFF2145D209AC7D400612234 /* ConerLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF2145C209AC7D400612234 /* ConerLabel.swift */; };
-		DFF44175223A035000DDD5F8 /* Mixin-Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = DFF44173223A035000DDD5F8 /* Mixin-Keys.plist */; };
-		DFF44176223A035000DDD5F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DFF44174223A035000DDD5F8 /* GoogleService-Info.plist */; };
 		DFF4417A223BC63100DDD5F8 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF44179223BC63100DDD5F8 /* ContactCell.swift */; };
 		DFFDCF8420AD8A7A00B4956E /* FileSendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFDCF8320AD8A7A00B4956E /* FileSendViewController.swift */; };
 		DFFDCF8C20ADC83900B4956E /* RecognizeWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFDCF8B20ADC83900B4956E /* RecognizeWindow.swift */; };
@@ -1523,6 +1528,13 @@
 		ABE865BF23F260FE00C0167D /* PermissionsActionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PermissionsActionCell.xib; sourceTree = "<group>"; };
 		ABE865C023F260FE00C0167D /* PermissionsActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsActionCell.swift; sourceTree = "<group>"; };
 		C148F70BB9EAB88D7B754DBA /* Pods-MixinNotificationService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MixinNotificationService.release.xcconfig"; path = "Pods/Target Support Files/Pods-MixinNotificationService/Pods-MixinNotificationService.release.xcconfig"; sourceTree = "<group>"; };
+		C4264DA825CC193B00D0D9A2 /* GroupInviteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupInviteView.swift; sourceTree = "<group>"; };
+		C4264DE325CC2DC000D0D9A2 /* GroupInviteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupInviteViewController.swift; sourceTree = "<group>"; };
+		C4264DE925CC37E800D0D9A2 /* GroupInviteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupInviteItem.swift; sourceTree = "<group>"; };
+		C426E40F25BD764B001F654C /* Mixin-Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mixin-Keys.plist"; sourceTree = "<group>"; };
+		C426E41F25BD76EE001F654C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C426E51125BE5C8C001F654C /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		C426E51225BE5C8C001F654C /* fp.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = fp.min.js; sourceTree = "<group>"; };
 		DD2C79AAFC0C43AD7C5C9B4D /* Pods_MixinNotificationService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MixinNotificationService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF03C88A1FF3A58C00C1ED6B /* GroupInviteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupInviteCell.swift; sourceTree = "<group>"; };
 		DF03C88C1FF4D9A100C1ED6B /* RefreshGroupIconJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshGroupIconJob.swift; sourceTree = "<group>"; };
@@ -1726,8 +1738,6 @@
 		DFEAED4C1FBD762100A617D8 /* Mixin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mixin.entitlements; sourceTree = "<group>"; };
 		DFF1AD7B22254C6E0087173D /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		DFF2145C209AC7D400612234 /* ConerLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConerLabel.swift; sourceTree = "<group>"; };
-		DFF44173223A035000DDD5F8 /* Mixin-Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Mixin-Keys.plist"; sourceTree = "<group>"; };
-		DFF44174223A035000DDD5F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DFF44179223BC63100DDD5F8 /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
 		DFFDCF8320AD8A7A00B4956E /* FileSendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileSendViewController.swift; sourceTree = "<group>"; };
 		DFFDCF8B20ADC83900B4956E /* RecognizeWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognizeWindow.swift; sourceTree = "<group>"; };
@@ -2483,6 +2493,41 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		C4264DA625CC18EF00D0D9A2 /* Invite */ = {
+			isa = PBXGroup;
+			children = (
+				C4264DE825CC37D100D0D9A2 /* Models */,
+				C4264DA725CC191700D0D9A2 /* Views */,
+				C4264DE325CC2DC000D0D9A2 /* GroupInviteViewController.swift */,
+			);
+			path = Invite;
+			sourceTree = "<group>";
+		};
+		C4264DA725CC191700D0D9A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C4264DA825CC193B00D0D9A2 /* GroupInviteView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C4264DE825CC37D100D0D9A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C4264DE925CC37E800D0D9A2 /* GroupInviteItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C426E51025BE5C8C001F654C /* FP */ = {
+			isa = PBXGroup;
+			children = (
+				C426E51125BE5C8C001F654C /* index.html */,
+				C426E51225BE5C8C001F654C /* fp.min.js */,
+			);
+			path = FP;
+			sourceTree = "<group>";
+		};
 		DBADD0FED15BCB65F6FF70EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2689,6 +2734,7 @@
 				DFA5B58F1FB03E6300549728 /* Wallet */,
 				7BF49DD420C3DED600A8510E /* ReCaptcha */,
 				7B66F66A24A86F3D007D6709 /* Call */,
+				C4264DA625CC18EF00D0D9A2 /* Invite */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -2786,12 +2832,13 @@
 		DF5D9F481F9CDBDE0036D5FD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DFF44174223A035000DDD5F8 /* GoogleService-Info.plist */,
-				DFF44173223A035000DDD5F8 /* Mixin-Keys.plist */,
+				C426E51025BE5C8C001F654C /* FP */,
 				7BBD8A3220C1D51C00DF2735 /* captcha.html */,
 				277FF7101F909A1200DBB2EB /* Info.plist */,
 				94E8913825C019F000F1E5D4 /* Pods-Mixin-acknowledgements.plist */,
 				DF8CECCE1FC2B1C900E40064 /* Mixin-Bridging-Header.h */,
+				C426E40F25BD764B001F654C /* Mixin-Keys.plist */,
+				C426E41F25BD76EE001F654C /* GoogleService-Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -3500,6 +3547,7 @@
 				7B2E3E481FA07F2E00DDDDEB /* Login.storyboard in Resources */,
 				DFE1F9831FAB51DA00537D43 /* Common.storyboard in Resources */,
 				7BFE47E32284394000FC4379 /* CheckmarkPeerCell.xib in Resources */,
+				C426E41025BD764B001F654C /* Mixin-Keys.plist in Resources */,
 				DF846CDF2369551D00AA1197 /* MultisigUserCell.xib in Resources */,
 				7BB0F9162434B03300BEDA97 /* SelectedPeerCell.xib in Resources */,
 				E041064E23C6076F00A6F08E /* WebView.xib in Resources */,
@@ -3508,6 +3556,7 @@
 				7BBCEC2025232FC700F270DF /* PopupTitleView.xib in Resources */,
 				DFC2647624E933B700BF954D /* BigAmountConfirmationWindow.xib in Resources */,
 				7BA9F32124A22EC200D7C091 /* GroupCallMemberCell.xib in Resources */,
+				C426E42025BD76EE001F654C /* GoogleService-Info.plist in Resources */,
 				7B4C656F242354AE003B78F9 /* LocationSearchNoResultView.xib in Resources */,
 				7B3FD4EE241965BE00B58006 /* LocationView.xib in Resources */,
 				7BDFAE942559165800296F8B /* CompactAssetCell.xib in Resources */,
@@ -3561,7 +3610,6 @@
 				7B0B01961FEA628F000EEE4F /* StrangerHintView.xib in Resources */,
 				ABE865C123F260FE00C0167D /* PermissionsActionCell.xib in Resources */,
 				7B9650B024879B9000DE86B9 /* MinimizedCallView.xib in Resources */,
-				DFF44176223A035000DDD5F8 /* GoogleService-Info.plist in Resources */,
 				7BEC4DF121A7D054003336F2 /* AssetCell.xib in Resources */,
 				7B7E7144217D87860052C7DD /* CallView.xib in Resources */,
 				7B2A115D22C1EAC900AD029C /* GalleryVideoControlView.xib in Resources */,
@@ -3574,7 +3622,6 @@
 				7BB788B2216C5A4A00EDE7B4 /* LoadingIndicatorFooterView.xib in Resources */,
 				DFDD89E922C4B8E600128991 /* DepositTipWindow.xib in Resources */,
 				DFA5B5911FB04C9C00549728 /* Wallet.storyboard in Resources */,
-				DFF44175223A035000DDD5F8 /* Mixin-Keys.plist in Resources */,
 				DFA5B58E1FADC88D00549728 /* Group.storyboard in Resources */,
 				DF1ED8E220BC0794003E10E8 /* Photo.storyboard in Resources */,
 				7B9863911FA313E300D4B16C /* BottomWrapperView.xib in Resources */,
@@ -3589,12 +3636,14 @@
 				DF846CDB23694A4900AA1197 /* MultisigUsersWindow.xib in Resources */,
 				DF3F6D6920EF2618006D0CBC /* QrcodeWindow.xib in Resources */,
 				7B2E5882244F10FB0073102C /* EmergencyContactTableHeaderView.xib in Resources */,
+				C426E51325BE5C8D001F654C /* index.html in Resources */,
 				DF6ABB142295019C00A012B2 /* AddressWindow.xib in Resources */,
 				E0BEB85B236C1BBC001FE534 /* ProfileView.xib in Resources */,
 				7B2E3E541FA07FA300DDDDEB /* CountryCode.plist in Resources */,
 				DFE356B51FB4990100E0E3A8 /* Setting.storyboard in Resources */,
 				7BB788B4216C5AA900EDE7B4 /* NoResultFooterView.xib in Resources */,
 				7BB06F45228EA7720048C2D6 /* NotificationView.xib in Resources */,
+				C426E51425BE5C8D001F654C /* fp.min.js in Resources */,
 				7BE73BFC230A8D0300B97FC6 /* group_separator_3.png in Resources */,
 				7B7B5DB7230EC16A00D0F463 /* CurrencyCell.xib in Resources */,
 				E0A70A1223825004003C3B96 /* InvitationHintView.xib in Resources */,
@@ -4135,6 +4184,7 @@
 				7BAB76AC228AAE00009ECB8C /* MessageReceiverSearchResult.swift in Sources */,
 				DFB190002330F6A40021CAF3 /* BiographyViewController.swift in Sources */,
 				7B7F7E391FD43F2500A1C91F /* DetailInfoMessageCell.swift in Sources */,
+				C4264DA925CC193B00D0D9A2 /* GroupInviteView.swift in Sources */,
 				7B8BFC8A1FDD77F9004E19DB /* UnknownMessageViewModel.swift in Sources */,
 				7BCA81C02501633F0019351F /* MXMAgreementCalculator.m in Sources */,
 				7B35AF7C228AA6CD00E8101D /* MessagesWithinConversationSearchResult.swift in Sources */,
@@ -4215,6 +4265,7 @@
 				7B7FBF8D2282D51100644693 /* IconPrefixedTextMessageViewModel.swift in Sources */,
 				7BAECA3A20401DE500AEA42F /* AttachmentLoadingViewModel.swift in Sources */,
 				7BCAF54A216B0C3700D6564A /* GiphyCollectionViewFlowLayout.swift in Sources */,
+				C4264DE425CC2DC000D0D9A2 /* GroupInviteViewController.swift in Sources */,
 				DF5D9F241F9C79E10036D5FD /* Constant.swift in Sources */,
 				E041064B23C5C3BC00A6F08E /* CoreTextLabelDelegate.swift in Sources */,
 				7BF8AD892440545C0038D293 /* PinnedHomeAppsModelController.swift in Sources */,
@@ -4483,6 +4534,7 @@
 				DF1A9A7A1FF206F500A95188 /* RefreshSnapshotsJob.swift in Sources */,
 				7B3D46B62088BCA300A0C19C /* GroupAnnouncementViewController.swift in Sources */,
 				7BF42E3522DCAC93005066E6 /* GalleryVideoItemViewController.swift in Sources */,
+				C4264DEA25CC37E800D0D9A2 /* GroupInviteItem.swift in Sources */,
 				7BF8ADC1244060A60038D293 /* HomeAppsModelController.swift in Sources */,
 				7B7264F0209C56E500F234BE /* ProfileDescriptionLabel.swift in Sources */,
 				7B04142B240FA09F00BE8D73 /* LocationCell.swift in Sources */,

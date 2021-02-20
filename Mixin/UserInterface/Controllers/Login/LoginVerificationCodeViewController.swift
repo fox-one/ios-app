@@ -139,6 +139,9 @@ class LoginVerificationCodeViewController: VerificationCodeViewController {
                 }
             }
             UIApplication.shared.setShortcutItemsEnabled(true)
+            DispatchQueue.main.async {
+                AppDelegate.current.checkFingerprint()
+            }
         case let .failure(error):
             DispatchQueue.main.sync {
                 self.handleVerificationCodeError(error)

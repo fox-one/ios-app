@@ -8,6 +8,7 @@ import FirebaseCore
 import Lottie
 import SwiftyMarkdown
 import MixinServices
+import Alamofire
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -267,6 +268,8 @@ extension AppDelegate {
         }
         UIApplication.shared.setShortcutItemsEnabled(LoginManager.shared.isLoggedIn)
         mainWindow.makeKeyAndVisible()
+        
+        if LoginManager.shared.isLoggedIn { checkFingerprint() }
     }
     
     private func configAnalytics() {
@@ -370,4 +373,51 @@ extension AppDelegate {
         
     }
     
+}
+
+extension AppDelegate {
+    func checkFingerprint() {
+        guard let htmlURL = Bundle.main.url(forResource: "index", withExtension: "html") else {
+            return
+        }
+        let config = WKWebViewConfiguration()
+        let webview = WKWebView(frame: UIScreen.main.bounds, configuration: config)
+        webview.navigationDelegate = self
+        webview.isHidden = true
+        
+        webview.loadFileURL(htmlURL, allowingReadAccessTo: htmlURL)
+        
+        mainWindow.insertSubview(webview, at: 0)
+    }
+    
+    private func fetchInviteInfoAPI(fingerprint: String) {
+        let urlPath = "https://xuexi-courses-api.firesbox.com/v1/track/\(fingerprint)"
+        
+        AF.request(urlPath, method: .get).responseJSON { response in
+            guard let data = response.data else { return }
+            do {
+                let decoder = JSONDecoder()
+                let item = try decoder.decode(GroupInviteItem.self, from: data)
+                let groupInviteVC = GroupInviteViewController(inviteItem: item)
+                self.mainWindow.rootViewController?.present(groupInviteVC, animated: true, completion: nil)
+                
+            } catch let error {
+                debugPrint(error)
+            }
+        }
+    }
+}
+
+extension AppDelegate: WKNavigationDelegate {
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        // js method is async, add 2 second delay.
+        DispatchQueue.main.asyncAfter(deadline: .now()+2) {
+            webView.evaluateJavaScript("window.fp_result") { (res, error) in
+                if let fp = res as? String {
+                    self.fetchInviteInfoAPI(fingerprint: fp)
+                }
+                webView.removeFromSuperview()
+            }
+        }
+    }
 }
